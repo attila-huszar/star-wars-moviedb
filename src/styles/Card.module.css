@@ -1,0 +1,38 @@
+.card {
+  display: flex;
+  width: 600px;
+  height: 265px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+}
+
+.cardImg {
+  width: 150px;
+  height: 235px;
+  object-fit: cover;
+}
+
+.cardTitle {
+  margin-bottom: 15px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-wrap: balance;
+}
+
+.cardText {
+  display: grid;
+  grid-template-columns: 125px auto;
+  gap: 10px;
+  font-size: 1rem;
+}
+
+.cardSubText {
+  color: var(--mediumGrey);
+}

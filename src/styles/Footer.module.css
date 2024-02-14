@@ -1,0 +1,36 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  padding: 0 50px;
+  background-color: var(--grey);
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  max-width: 1275px;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: auto;
+  color: var(--mediumGrey);
+}
+
+.copyleft {
+  width: 15px;
+  height: 15px;
+  background-image: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20980%20980%22%3E%3Ccircle%20cx%3D%22490%22%20cy%3D%22490%22%20r%3D%22440%22%20fill%3D%22none%22%20stroke%3D%22%235a5a5a%22%20stroke-width%3D%22100%22%2F%3E%3Cpath%20fill%3D%22%235a5a5a%22%20d%3D%22M219%2C428H350a150%2C150%200%201%201%200%2C125H219a275%2C275%200%201%200%200-125z%22%2F%3E%3C%2Fsvg%3E);
+  background-repeat: no-repeat;
+}
+
+.links {
+  display: flex;
+  gap: 30px;
+  color: #fff;
+}

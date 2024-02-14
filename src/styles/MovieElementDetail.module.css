@@ -1,0 +1,49 @@
+.detailContainer {
+  padding: 0 10px 15px;
+}
+
+.image {
+  width: 275px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.detailBody {
+  display: flex;
+  padding-bottom: 25px;
+}
+
+.breadcrumb {
+  margin-bottom: 15px;
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+}
+
+.breadcrumbUp {
+  color: var(--primary30);
+}
+
+.breadcrumbTitle {
+  color: var(--mediumGrey);
+}
+
+.detailTitle {
+  padding: 0 15px 15px;
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-wrap: balance;
+}
+
+.detailText {
+  display: grid;
+  grid-template-columns: 125px auto;
+  gap: 10px;
+  font-size: 1rem;
+  padding: 0 15px;
+}
+
+.detailSubText {
+  color: var(--mediumGrey);
+}

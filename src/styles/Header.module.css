@@ -1,0 +1,37 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  max-width: 1375px;
+  height: 75px;
+  padding: 15px 50px;
+  color: #fff;
+  background-color: var(--darkGrey);
+}
+
+.logo {
+  margin-right: auto;
+  height: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a.active {
+  color: var(--primary50);
+}
+
+.navLink {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 5px;
+}

@@ -1,0 +1,24 @@
+.notFound {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: var(--grey);
+}
+
+.span404 {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 6.5rem;
+}
+
+.img404 {
+  position: relative;
+  top: 7px;
+  height: 5rem;
+}
+
+.button404 {
+  all: unset;
+  cursor: pointer;
+}
