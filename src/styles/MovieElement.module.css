@@ -4,7 +4,7 @@
   align-content: flex-start;
   gap: 25px;
   padding: 10px;
-  height: calc(100vh - 300px);
+  height: calc(100vh - 275px);
   overflow-y: auto;
 }
 
@@ -12,11 +12,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10px 10px;
+  padding: 0 10px;
 }
 
 .title > p {
   margin-right: auto;
+  padding-left: 15px;
   font-size: 1.75rem;
   font-weight: 700;
 }
@@ -34,7 +35,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 8px 12px;
+  padding: 8px 10px;
   font-weight: 700;
   cursor: pointer;
 }
@@ -61,13 +62,11 @@
 }
 
 .pagination {
-  position: relative;
-  bottom: -13px;
   display: flex;
   justify-content: center;
   gap: 8px;
   margin: 0;
-  padding: 0;
+  padding: 15px;
   list-style: none;
 }
 

@@ -1,5 +1,5 @@
 .detailContainer {
-  padding: 0 10px 15px;
+  padding: 5px 25px;
 }
 
 .image {
@@ -30,7 +30,7 @@
 }
 
 .detailTitle {
-  padding: 0 15px 15px;
+  padding: 0 25px 15px;
   font-size: 1.75rem;
   font-weight: 700;
   text-wrap: balance;
@@ -41,7 +41,7 @@
   grid-template-columns: 125px auto;
   gap: 10px;
   font-size: 1rem;
-  padding: 0 15px;
+  padding: 0 25px;
 }
 
 .detailSubText {
