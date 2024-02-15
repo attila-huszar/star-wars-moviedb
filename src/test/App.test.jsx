@@ -6,21 +6,20 @@ import '@testing-library/jest-dom'
 import { BrowserRouter } from 'react-router-dom'
 import App from '../App'
 
-const TEST_URL = 'http://localhost:3004/characters'
-
 const mockCharacters = [
   {
     id: 1,
     name: 'Luke Skywalker',
-    height: '172',
-    mass: '77',
+    height: 1.72,
+    mass: 77,
+    born: -19,
+    gender: 'male',
     hair_color: 'blond',
     skin_color: 'fair',
     eye_color: 'blue',
-    birth_year: '19BBY',
-    gender: 'male',
-    src: 'https://www.indyturk.com/sites/default/files/styles/800x600/public/article/main_image/2021/04/21/642721-1341902460.png?itok=HigdQPaH',
-    homeworld: 'Tatooine',
+    homeworld: 'tatooine',
+    image:
+      'https://vignette.wikia.nocookie.net/starwars/images/2/20/LukeTLJ.jpg',
     films: [
       {
         id: 4,
@@ -67,33 +66,11 @@ const mockCharacters = [
 
 vi.mock('axios')
 
-axios.get.mockImplementation((url) => {
-  if (url === TEST_URL) {
-    return Promise.resolve({
-      status: 200,
-      data: mockCharacters,
-    })
-  } else {
-    return Promise.resolve({
-      status: 404,
-      json: () => Promise.resolve(),
-    })
-  }
-})
-
-global.fetch = vi.fn((url) => {
-  if (url === TEST_URL) {
-    return Promise.resolve({
-      ok: true,
-      json: () => Promise.resolve(mockCharacters),
-    })
-  } else {
-    return Promise.resolve({
-      ok: false,
-      status: 404,
-      json: () => Promise.resolve(),
-    })
-  }
+axios.get.mockImplementation(() => {
+  return Promise.resolve({
+    status: 200,
+    data: mockCharacters,
+  })
 })
 
 describe('App', () => {
@@ -101,15 +78,11 @@ describe('App', () => {
     const user = userEvent.setup()
     render(<App />, { wrapper: BrowserRouter })
 
-    // Simulate navigation to Characters page
     await user.click(screen.getByText(/characters/i))
     expect(window.location.pathname).toBe('/characters')
 
-    // Wait for characters data to be loaded
     await waitFor(() =>
-      expect(screen.getByText('Luke Skywalker')).toBeInTheDocument(),
+      expect(screen.getByText(/Luke Skywalker/i)).toBeInTheDocument(),
     )
-
-    // Simulate navigation to a detailed character page
   })
 })
