@@ -5,12 +5,17 @@ export function Footer() {
     <footer className={style.footer}>
       <div className={style.text}>
         <div className={style.date}>
+          <p>Attila Huszár</p>
           <p className={style.copyleft}></p>
           <p>{new Date().getFullYear()}</p>
         </div>
         <div className={style.links}>
-          <a href="#">Help</a>
-          <a href="#">Contact</a>
+          <a
+            href="https://attilah.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer">
+            Contact
+          </a>
         </div>
       </div>
     </footer>

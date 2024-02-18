@@ -11,7 +11,7 @@ export const DataFields = ({ data, component, page }) => {
       {field.isCollapsed ? (
         <ParagraphCollapse textList={field.value} />
       ) : field.isLink ? (
-        <a href={field.value} target="_blank" rel="noreferrer">
+        <a href={field.value} target="_blank" rel="noopener noreferrer">
           {field.value ? field.value.replace(/^https?:\/\//, '') : 'n/a'}
         </a>
       ) : (
