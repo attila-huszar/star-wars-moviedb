@@ -3,7 +3,8 @@
 }
 
 .image {
-  width: 275px;
+  min-width: 275px;
+  max-width: 275px;
   height: 100%;
   object-fit: cover;
 }
@@ -42,8 +43,4 @@
   gap: 10px;
   font-size: 1rem;
   padding: 0 25px;
-}
-
-.detailSubText {
-  color: var(--mediumGrey);
 }

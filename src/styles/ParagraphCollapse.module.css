@@ -1,0 +1,12 @@
+.text {
+  margin-right: 10px;
+}
+
+.toggleBtn {
+  all: unset;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary30);
+  white-space: nowrap;
+  cursor: pointer;
+}

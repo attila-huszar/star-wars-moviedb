@@ -1,3 +1,15 @@
+export function capitalizeString(str) {
+  return typeof str === 'string' && str.length
+    ? str.charAt(0).toUpperCase() + str.slice(1)
+    : 'unknown'
+}
+
+export function transformDate(date) {
+  return typeof date === 'number' && date < 0
+    ? `${Math.abs(date)} BBY`
+    : date || 'unknown'
+}
+
 export function arabicToRoman(num) {
   const romanMap = {
     X: 10,
