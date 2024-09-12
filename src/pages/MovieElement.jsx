@@ -2,9 +2,9 @@ import { useLocation } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { useEffect, useState, useCallback } from 'react'
 import { fetchData } from '../api/fetch'
-import { LoadPending } from '../components/LoadPending'
-import { LoadError } from '../components/LoadError'
-import { SortAndPaginateData } from '../components/SortAndPaginateData'
+import { LoadPending } from '../components/LoadPending.jsx'
+import { LoadError } from '../components/LoadError.jsx'
+import { SortAndPaginateData } from '../components/SortAndPaginateData.jsx'
 import { episodesItemOffset } from '../store/episodesSlice'
 import { charactersItemOffset } from '../store/charactersSlice'
 import { planetsItemOffset } from '../store/planetsSlice'
@@ -43,7 +43,6 @@ export function MovieElement() {
 
   useEffect(() => {
     dispatch(fetchData(page))
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [page])
 
   useEffect(() => {

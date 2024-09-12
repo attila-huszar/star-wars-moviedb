@@ -14,7 +14,3 @@ export function LoadPending({ page }) {
 LoadPending.propTypes = {
   page: PropTypes.string,
 }
-
-LoadPending.defaultProps = {
-  page: 'Loading...',
-}

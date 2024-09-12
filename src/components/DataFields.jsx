@@ -1,6 +1,6 @@
 import { Fragment } from 'react'
 import { dataFieldStructure } from '../utils/dataFieldStructure'
-import { ParagraphCollapse } from './ParagraphCollapse'
+import { ParagraphCollapse } from './ParagraphCollapse.jsx'
 import style from '../styles/DataFields.module.css'
 import PropTypes from 'prop-types'
 

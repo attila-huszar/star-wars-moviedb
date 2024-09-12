@@ -2,9 +2,9 @@ import { useLocation, useParams, Link } from 'react-router-dom'
 import { useEffect } from 'react'
 import { fetchData } from '../api/fetch'
 import { useDispatch, useSelector } from 'react-redux'
-import { DataFields } from '../components/DataFields'
-import { LoadPending } from '../components/LoadPending'
-import { LoadError } from '../components/LoadError'
+import { DataFields } from '../components/DataFields.jsx'
+import { LoadPending } from '../components/LoadPending.jsx'
+import { LoadError } from '../components/LoadError.jsx'
 import { arabicToRoman } from '../utils/textTransforms'
 import style from '../styles/MovieElementDetail.module.css'
 
@@ -18,7 +18,6 @@ export function MovieElementDetail() {
 
   useEffect(() => {
     dispatch(fetchData(page))
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [page])
 
   if (error) {
