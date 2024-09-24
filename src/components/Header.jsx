@@ -1,5 +1,5 @@
 import { Link, NavLink } from 'react-router-dom'
-import { routes } from '../routes/routes.jsx'
+import { routes } from '../routes/routes'
 import style from '../styles/Header.module.css'
 import logo from '../assets/svg/logo.svg'
 import IconEpisodes from '../assets/svg/episodes.svg?react'

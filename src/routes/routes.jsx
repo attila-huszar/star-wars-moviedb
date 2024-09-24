@@ -1,7 +1,7 @@
 import { Navigate } from 'react-router-dom'
-import { MovieElement } from '../pages/MovieElement.jsx'
-import { MovieElementDetail } from '../pages/MovieElementDetail.jsx'
-import { NotFound } from '../pages/NotFound.jsx'
+import { MovieElement } from '../pages/MovieElement'
+import { MovieElementDetail } from '../pages/MovieElementDetail'
+import { NotFound } from '../pages/NotFound'
 
 export const routes = [
   {

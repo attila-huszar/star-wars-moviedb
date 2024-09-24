@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { DataFields } from '../components/DataFields.jsx'
+import { DataFields } from '../components/DataFields'
 import { arabicToRoman } from '../utils/textTransforms'
 import style from '../styles/Card.module.css'
 import PropTypes from 'prop-types'
