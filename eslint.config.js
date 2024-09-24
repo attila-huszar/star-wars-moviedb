@@ -12,9 +12,8 @@ export default [
   react.configs.flat.recommended,
   prettierConfig,
   {
-    files: ['**/*.{js,jsx,mjs,cjs,ts,tsx}'],
+    files: ['**/*.{js,jsx,mjs,cjs}'],
     plugins: {
-      react: react,
       'react-refresh': reactRefresh,
       prettier: prettier,
     },
@@ -39,6 +38,11 @@ export default [
   },
   {
     settings: {
+      'import-x/resolver': {
+        node: {
+          extensions: ['.js', '.jsx'],
+        },
+      },
       react: {
         version: 'detect',
       },
